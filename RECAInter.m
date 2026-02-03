@@ -127,7 +127,7 @@
         
    for z= 1:numel(Year)
 
-        Year = table2array(unique(round(rdata(:,4),1)));  % Drop the decimal part and duplicates and make it a array
+        %Year = table2array(unique(round(rdata(:,4),1)));  % Drop the decimal part and duplicates and make it a array
         tempyear = find(rdata.time==Year(z));
         refyear  = find(rdata.time==Year(1));
 
